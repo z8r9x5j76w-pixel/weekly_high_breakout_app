@@ -20,9 +20,9 @@ st.set_page_config(
 )
 
 # ── Production params (v1.0) ──────────────────────────────────────────────────
-SL              = 0.04
-TP              = 0.18
-MAX_HOLD        = 30
+SL              = 0.03
+TP              = 0.15
+MAX_HOLD        = 20
 NOTIONAL        = 2000.0
 MAX_POSITIONS   = 10
 TREND_SMA       = 50
@@ -35,9 +35,9 @@ CONSOL_MIN      = 10      # min consolidation bars below 52w high
 CONSOL_MAX      = 60      # max consolidation bars below 52w high
 CONSOL_TOL      = 0.05    # how close to 52w high during consolidation (within 5%)
 HIGH_WINDOW     = 252     # bars to define 52-week high
-MIN_PULLBACK    = 0.02    # min pullback from 52w high during consolidation
+MIN_PULLBACK    = 0.03    # min pullback from 52w high during consolidation
 MAX_PULLBACK    = 0.20    # max pullback from 52w high during consolidation
-BRK_BUFFER      = 0.0025   # close must be this % above prior 52w high
+BRK_BUFFER      = 0.002   # close must be this % above prior 52w high
 VOL_RATIO       = 0.0     # breakout volume vs 20d avg (0.0 = off)
 
 # ── Universe ──────────────────────────────────────────────────────────────────
